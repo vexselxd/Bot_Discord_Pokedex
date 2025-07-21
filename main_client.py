@@ -3,11 +3,11 @@ import random
 from bot_logic import gen_pass,game,currency, gen_emoji, flip_coin
 
 
-# La variable intents almacena los privilegios del bot
+
 intents = discord.Intents.default()
-# Activar el privilegio de lectura de mensajes
+
 intents.message_content = True
-# Crear un bot en la variable cliente y transferirle los privilegios
+
 client = discord.Client(intents=intents)
 
 @client.event
