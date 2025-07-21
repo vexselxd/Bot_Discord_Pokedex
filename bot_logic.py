@@ -2,7 +2,7 @@ import random
 import requests
 import discord
 
-# Generar contraseñas
+
 def gen_pass(pass_length):
     elements = "+-/*!&$#?=@abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890"
     password = ""
@@ -10,7 +10,7 @@ def gen_pass(pass_length):
         password += random.choice(elements)
     return password
 
-# Juego de respuestas aleatorias
+
 def game():
     answers = [
         "Sigue por este camino y lograrás todo.",
@@ -25,7 +25,7 @@ def game():
     ]
     return random.choice(answers)
 
-# Moneda aleatoria
+
 def currency():
     results = [
         "¡Y es cara!",
@@ -33,12 +33,11 @@ def currency():
     ]
     return random.choice(results)
 
-# Generar emojis
+
 def gen_emoji():
     emoji = ["\U0001f600", "\U0001f642", "\U0001F606", "\U0001F923"]
     return random.choice(emoji)
 
-# Lanzar moneda
 def flip_coin():
     flip = random.randint(0, 2)
     if flip == 0:
